@@ -1,0 +1,18 @@
+Audit du serveur multi-roles
+
+Pour rappel, le serveur est socle de virtualisation , serveur AD, DNS, serveur d efichier et de sauvegarde
+et socle de la réplication DFS
+
+1-Choix décisionnel VmWare - Hyper V
+
+VmWare est une solution plus stable et moins consommatrice de ressources mais nécessiterait de refondre toute l'architecture 
+Il est interessant de se poser la question avant tout démarrage
+
+2-remettre en oeuvre une sauvegarde opérationnelle
+  
+   Mise en oeuvre sur une machine virtuelle hors domaine de la solution Veeam. Création et rédaction d'une vraie stratégie de sauvegarde
+   Déploiement de la sauvegarde
+   
+ 3- construire un servuer de fichiers sur une machine virtuelle dédiée
+  
+    on profitera de cette migration pour désactiver le DFS (consommateur de resssources) et activer les clichés instantanées qui seront un excellent complément à la sauvegarde
