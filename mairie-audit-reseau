@@ -1,0 +1,34 @@
+Compte-rendu partie réseau local
+
+Aucun contexte de sécurité n'a été mis en oeuvre concernant les switchs, et le réseau est dit "a plat"
+Point positif: les switches, bien que dit  "end of life" seront maintenus jusqu"en 2025
+
+dans l'ordre des actions à effectuer
+  1-sécuriser les équipements
+  
+  Il n'est pas possible de consolider la circulation des flux sur le réseau si les équipements ne sont pas sécurisés et à jour
+  
+      Mettre à jour les firmware des différents switchs avec la dernière version disponible sur le site de Cisco
+       même si elle date de 2019 la dernière version a 4 ans de moins que la version actutellement installée
+       changer la stratégie de connexion aux switchs e'n passant en SSH
+       chiffrer le mot de passe
+       
+   Il est indispensable d'effectuer dses sauvegardes des configurations des switchs et de maintenir ces bonnes pratiques à chaque modificatiion de leur configuration
+  
+ 
+ Ces quelques actions simples à mener (penser que le mise a jour des switchs entrainte leur redémarrage et doit se faire hors exploitation)
+ va permettre d'atteindre un premier niveau de sécurisation du réseau local
+ 
+ 2- cartographier les éléments
+ 
+ Un schéma doit permettre d'identifier les équipements installés derrière chaque port du switch, l'objectif étant de pouvoir metttre en place par la suite 
+ une segmentation (VLAN) sans risquer d'isoler des élements
+ 
+ 3-Définir la politique et les règles de segmentation
+ 
+ cette définition doit se faire en collaboration avec les services informatiques de la mairie
+ Les thèmes abordés ouevent être : segmentation par service, séparation voix/PC , cloisonnement du Wifi ,....
+ L'esprit reste de mettre en place des règles simples et efficaces
+ 
+ 4- mise en place et maintien en conditions opérationnelles de cette politique
+   
