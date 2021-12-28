@@ -1,0 +1,7 @@
+compte rendu audit pare-feu
+
+le parefeu en place est un Watchguard T20, dont la garantie expire en  2022
+il doit etre remplacé par un équipement permettant la segmentation cote Lan et
+au moins deux interface coté Wan
+La stratégie de sécurisation des flux sortant devra de toute manière etre revue apres la mise en place du reseau Linkt
+Il faut commencer par etablir une cartograhie des flux circulant des reseaux locaux vers Internet
